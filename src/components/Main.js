@@ -106,11 +106,11 @@ function Main() {
                     <Link to={`/details/${e.id}`}>{e.symbol}</Link>
                   </td>
                   <td>{e.marketCap}</td>
-                  <td>{e.price.toFixed(2)}</td>
+                  <td >{e.price.toFixed(2)}</td>
                   <td>{e.volume.toFixed(2)}</td>
-                  <td>{e.priceChange1h.toFixed(2)}</td>
-                  <td>{e.priceChange1d.toFixed(2)}</td>
-                  <td>{e.priceChange1w}</td>
+                  <td style={e.priceChange1h>0?{color:"green"}:{color:"red"}}>{e.priceChange1h.toFixed(2)}</td>
+                  <td style={e.priceChange1d>0?{color:"green"}:{color:"red"}}>{e.priceChange1d.toFixed(2)}</td>
+                  <td style={e.priceChange1w>0?{color:"green"}:{color:"red"}}>{e.priceChange1w}</td>
 
                   <td>
                     <button
