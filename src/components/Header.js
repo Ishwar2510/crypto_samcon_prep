@@ -5,7 +5,7 @@ function Header() {
       style={{
         display: "flex",
         flexDirection: "row",
-        backgroundColor: "grey",
+       
         height: "20px",
        
         justifyContent: "space-between",

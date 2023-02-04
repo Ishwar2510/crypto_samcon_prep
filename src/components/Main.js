@@ -53,7 +53,7 @@ function Main() {
   }
 
   return (
-    <div id="container">
+    <div id="container" width="100%" overFlowX="scroll">
       <h2 style={{ textAlign: "center" }}>ALL Cryptocurrencies</h2>
       <input
         style={{ marginBottom: "10px" }}
