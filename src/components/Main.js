@@ -19,7 +19,7 @@ function Main() {
   }
   useEffect(() => {
     getData();
-  }, []);
+  },[]);
 
   function setInput(e) {
     setSearchData(e.target.value);
@@ -33,7 +33,7 @@ function Main() {
         sdata = e;
         sdata.isfav = !sdata.isfav;
       }
-      return e.id != id;
+      return e.id !== id;
     });
 
     if (sdata.isfav) {
@@ -50,9 +50,6 @@ function Main() {
       udata.splice(firstFalseIndex, 0, sdata);
       setData(udata);
     }
-  }
-  function setFav(id) {
-    let sdata = {};
   }
 
   return (
@@ -101,7 +98,7 @@ function Main() {
                     <img
                       style={{ width: "13px", height: "14px" }}
                       src={e.icon}
-                      alt="image"
+                      alt="imagetag"
                     ></img>
                     {e.name}
                   </td>

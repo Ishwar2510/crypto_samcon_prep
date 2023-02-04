@@ -7,7 +7,7 @@ function Header() {
         flexDirection: "row",
         backgroundColor: "grey",
         height: "20px",
-        padding: "5px",
+       
         justifyContent: "space-between",
         padding: "15px",
       }}
