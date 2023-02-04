@@ -1,0 +1,25 @@
+#container{
+    text-align:center;
+    overflow: auto;
+    padding: 70px;
+}
+#container th{
+   
+    text-align: center;
+    height:30px
+}
+#container th:hover{
+    cursor: pointer;
+    color: brown;
+}
+
+td {
+    text-align: center;
+    height:60px;
+    padding: 2px;
+    cursor: pointer;
+}
+tr{
+    border-bottom: 1px solid grey;
+    border-color: rgba(128, 128, 128,0.2);
+}

@@ -1,16 +1,28 @@
-import React from 'react'
+import React from "react";
 function Header() {
   return (
-    <div style={{display:"flex" ,flexDirection:"row" ,backgroundColor:"grey",height:"20px",padding:"5px"}}>
-    <div id="left" style={{width:"30%"}}></div>
-    <div id ="right" style={{width:"70%"}}>
-        <button>Signup</button>        
-        <button>login</button>
-
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        backgroundColor: "grey",
+        height: "20px",
+        padding: "5px",
+        justifyContent: "space-between",
+        padding: "15px",
+      }}
+    >
+      <div id="left"></div>
+      <div id="right">
+        <button style={{ marginRight: "15px", borderRadius: "5px" }}>
+          Signup
+        </button>
+        <button style={{ marginRight: "15px", borderRadius: "5px" }}>
+          login
+        </button>
+      </div>
     </div>
-
-    </div>
-  )
+  );
 }
 
-export default Header
+export default Header;

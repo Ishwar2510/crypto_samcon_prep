@@ -1,13 +1,20 @@
-import React from 'react'
-import Header from './components/Header';
-import Main from './components/Main';
+import React, { useState } from "react";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
+import Pages from "./pages/Pages";
+import { createContext } from "react";
+
+export const userContext = createContext();
 function App() {
+  const [centraldata, setCentralData] = useState([]);
   return (
     <>
-   <Header/>
-   <Main/>
+      <userContext.Provider value={{ centraldata, setCentralData }}>
+        <Header />
+        <Pages />
+      </userContext.Provider>
     </>
-  
   );
 }
 
