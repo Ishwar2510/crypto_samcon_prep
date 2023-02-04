@@ -123,7 +123,9 @@ function Main() {
                         addFav(e);
                       }}
                     >
-                      add fav
+                     {
+                        e.isfav?"Rmv":"Add"
+                     }
                     </button>
                   </td>
                 </tr>
